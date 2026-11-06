@@ -413,10 +413,10 @@ input[type=number]:focus{outline:none;border-color:var(--glow);box-shadow:0 0 0 
 .pc-desc{font-size:1.38cqw;line-height:1.6;color:var(--ink-soft);margin:0}
 .pc-bottom{display:flex;gap:2cqw;align-items:flex-end}
 .pc-qr{
-  width:12.5cqw;height:12.5cqw;flex:none;border-radius:1.2cqw;display:grid;place-items:center;text-align:center;
-  border:.18cqw dashed var(--walnut-300);background:var(--cement-0);
-  font-family:var(--mono);font-size:1.05cqw;color:var(--walnut-700);letter-spacing:.05em;padding:1cqw;
+  width:13.5cqw;height:13.5cqw;flex:none;border-radius:1.2cqw;background:#fff;padding:1.2cqw;
+  box-shadow:0 0 0 .15cqw var(--walnut-300);display:block;
 }
+.pc-qr svg{width:100%;height:100%;display:block}
 .pc-scan{font-size:1.15cqw;color:var(--ink-mute);line-height:1.5}
 .pc-scan b{display:block;color:var(--walnut-900);font-size:1.45cqw}
 .pcard-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
@@ -515,6 +515,12 @@ body.present-mode .pcard{width:min(94vw,calc(94vh * 16 / 9));}
   .cmx-under{padding:14px 14px 16px}
 }
 
+/* ---- Sources & AI use ---- */
+.refs{padding-left:1.6em;margin:8px 0 18px}
+.refs li{margin:0 0 10px;line-height:1.6;font-size:15.5px;color:var(--ink)}
+.refs li a{color:var(--walnut-800);word-break:break-word}
+.use-table td:first-child{white-space:nowrap;font-weight:600}
+
 /* ==========================================================
    RESPONSIVE
    ========================================================== */
@@ -578,6 +584,7 @@ body.present-mode .pcard{width:min(94vw,calc(94vh * 16 / 9));}
     <li><a href="#ch9" data-target="ch9"><span class="num">09</span>Neural Networks<span class="dot"></span></a></li>
     <li><a href="#ch10" data-target="ch10"><span class="num">10</span>Kazakhstan AI Legal Framework<span class="dot"></span></a></li>
     <li><a href="#comic" data-target="comic"><span class="num">★</span>Comic: Q-Bot Chronicles<span class="dot"></span></a></li>
+    <li><a href="#refs" data-target="refs"><span class="num">§</span>Sources &amp; AI Use<span class="dot"></span></a></li>
   </ul>
   <div class="side-foot">
     <div class="score-row"><span>Quiz progress</span><b><span id="solved">0</span>/<span id="total">0</span></b></div>
@@ -670,14 +677,15 @@ body.present-mode .pcard{width:min(94vw,calc(94vh * 16 / 9));}
         </div>
         <div class="pc-right">
           <div>
-            <div class="pc-label">Author</div>
+            <div class="pc-label">Author · Individual project</div>
             <div class="pc-name">Raid Zhetpisov</div>
             <div class="pc-course">AI Fundamentals · EndTerm Project</div>
           </div>
           <p class="pc-desc">An interactive web book that follows the idea of the rational agent from search and game playing to Bayesian reasoning, reinforcement learning, neural networks and Kazakhstan’s AI law. Each chapter pairs clear theory with live demos, code and mini-quizzes.</p>
           <div class="pc-bottom">
-            <div class="pc-qr">[QR CODE HERE]</div>
-            <div class="pc-scan"><b>Scan to read</b>10 chapters · 6 demos ·<br />20 quiz questions</div>
+            <div class="pc-qr"><svg role="img" aria-label="QR code linking to the book" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33"><path stroke="#1d130c" d="M0 0.5h7m2 0h1m2 0h1m1 0h1m4 0h2m2 0h1m2 0h7m-33 1h1m5 0h1m1 0h1m2 0h5m1 0h2m2 0h4m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m6 0h1m3 0h1m6 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m7 0h2m1 0h3m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m6 0h2m1 0h2m1 0h1m1 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m2 0h3m1 0h2m3 0h2m4 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-24 1h2m1 0h2m1 0h3m1 0h1m2 0h2m-23 1h3m1 0h2m2 0h3m4 0h3m2 0h1m1 0h1m6 0h2m-30 1h1m2 0h1m1 0h3m2 0h9m2 0h1m2 0h2m1 0h2m1 0h1m-33 1h1m4 0h4m1 0h1m1 0h1m3 0h1m1 0h1m2 0h3m3 0h3m2 0h1m-31 1h1m2 0h1m2 0h1m2 0h1m4 0h1m1 0h1m1 0h1m1 0h3m2 0h1m1 0h1m1 0h2m-32 1h3m2 0h1m1 0h3m2 0h1m1 0h1m2 0h1m3 0h3m2 0h3m-29 1h4m2 0h3m1 0h2m2 0h1m3 0h1m4 0h1m2 0h1m2 0h2m-32 1h1m1 0h1m2 0h3m3 0h1m2 0h1m1 0h5m5 0h3m1 0h1m-31 1h1m4 0h1m3 0h3m1 0h1m2 0h1m1 0h1m2 0h2m2 0h3m1 0h2m-30 1h3m2 0h3m3 0h1m1 0h1m2 0h1m1 0h3m1 0h1m1 0h2m1 0h3m-28 1h2m2 0h1m1 0h1m5 0h1m1 0h2m1 0h1m2 0h4m1 0h2m1 0h2m-33 1h2m2 0h5m1 0h2m2 0h1m1 0h2m3 0h1m3 0h4m1 0h2m-32 1h1m1 0h1m2 0h1m1 0h1m1 0h2m2 0h4m1 0h2m2 0h5m1 0h1m2 0h2m-33 1h1m1 0h5m1 0h1m2 0h1m3 0h2m1 0h1m2 0h1m1 0h2m4 0h2m-31 1h1m4 0h1m3 0h2m5 0h2m1 0h3m1 0h1m1 0h2m5 0h1m-28 1h6m1 0h4m5 0h1m1 0h3m1 0h2m2 0h2m-32 1h1m5 0h3m2 0h1m3 0h5m1 0h1m2 0h3m1 0h1m1 0h2m-33 1h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m2 0h1m3 0h1m4 0h5m2 0h2m-25 1h1m6 0h3m1 0h6m3 0h2m1 0h1m-32 1h7m2 0h1m2 0h1m1 0h2m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m-29 1h1m5 0h1m1 0h2m4 0h2m2 0h1m2 0h1m2 0h1m3 0h3m-31 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h2m1 0h1m2 0h3m1 0h6m1 0h1m-31 1h1m1 0h3m1 0h1m1 0h3m3 0h2m1 0h1m2 0h1m1 0h3m2 0h1m1 0h4m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h3m3 0h1m2 0h1m2 0h1m2 0h2m1 0h1m-30 1h1m5 0h1m1 0h2m1 0h3m1 0h2m1 0h1m4 0h2m1 0h4m2 0h1m-33 1h7m3 0h2m1 0h2m1 0h3m1 0h4m1 0h2m1 0h1m1 0h1"/></svg>
+</div>
+            <div class="pc-scan"><b>Scan to read</b>10 chapters · 6 demos ·<br />20 quiz questions<br /><span style="font-family:var(--mono);font-size:.78cqw;white-space:nowrap;display:block;margin-top:.4cqw">no-name229.github.io/ai-rational-mind</span></div>
           </div>
         </div>
       </div>
@@ -2771,6 +2779,63 @@ MODEL B (Q-Bot v9 network):     TP 18  FN 2  FP 12  TN 968
 <li>An <strong>AI audit</strong> checks classification, data, fairness metrics per group, transparency, human oversight, security and documentation.</li>
 </ul>
 <p><em>Moral:</em> a rational agent maximizes its performance measure. A responsible one also makes sure that measure respects people.</p></aside><nav class="pager cmx-pager"><a class="prev" href="#comic-9"><small>← Episode 9</small>Black Ice</a><a class="hub" href="#comic">All episodes</a><a class="next" href="#home"><small>The end →</small>Back to the book cover</a></nav></div>
+</section>
+
+<!-- =====================================================
+     SOURCES & AI USE
+     ===================================================== -->
+<section class="chapter" data-id="refs" data-title="Sources &amp; AI Use">
+  <header class="chapter-head">
+    <span class="eyebrow">Academic integrity</span>
+    <h1>Sources &amp; AI Use</h1>
+    <p class="lede">This page lists the literature the explanations were checked against and states openly which generative-AI tools helped to make the book, and for what.</p>
+    <div class="meta"><span class="chip">Individual project</span><span class="chip">Disclosure</span><span class="chip">References</span></div>
+  </header>
+
+  <h2>A · Generative-AI disclosure</h2>
+  <p>The book is an individual project by Raid Zhetpisov. The structure, the choice of topics and the course material come from the AI Fundamentals lectures. Generative-AI tools were used as assistants, and their output was reviewed by the author against the lectures and the sources below.</p>
+  <table class="use-table">
+    <thead><tr><th>Tool</th><th>Used for</th></tr></thead>
+    <tbody>
+      <tr><td>Claude (Anthropic)</td><td>Drafting and structuring chapter text, the interactive demos, code listings and quiz questions as HTML/CSS/JavaScript; writing the script of the comic <em>The Chronicles of Q-Bot</em> and the image prompts; building the page layout.</td></tr>
+      <tr><td>Google Flow · Nano Banana Pro</td><td>Generating the illustrations: the comic cover and all comic panels. The speech bubbles, captions, readouts and tables are real HTML text placed next to the images.</td></tr>
+    </tbody>
+  </table>
+  <div class="dyk" style="margin-top:26px">
+    <div class="lamp">✓</div>
+    <div><span class="label">Verification</span><h3>How the content was checked</h3>
+    <p>Technical explanations, formulas and numerical examples were compared with the lecture material and the references below, and the code listings were run. AI-generated illustrations are artistic and are not technical diagrams: where an image and the text disagree, the text is authoritative.</p></div>
+  </div>
+
+  <h2 style="margin-top:34px">B · References</h2>
+  <h3>Textbooks</h3>
+  <ol class="refs">
+    <li>Russell, S. &amp; Norvig, P. (2021). <em>Artificial Intelligence: A Modern Approach</em> (4th ed.). Pearson.</li>
+    <li>Sutton, R. S. &amp; Barto, A. G. (2018). <em>Reinforcement Learning: An Introduction</em> (2nd ed.). MIT Press.</li>
+    <li>Goodfellow, I., Bengio, Y. &amp; Courville, A. (2016). <em>Deep Learning</em>. MIT Press.</li>
+    <li>Koller, D. &amp; Friedman, N. (2009). <em>Probabilistic Graphical Models: Principles and Techniques</em>. MIT Press.</li>
+    <li>Pearl, J. (1988). <em>Probabilistic Reasoning in Intelligent Systems</em>. Morgan Kaufmann.</li>
+    <li>Minsky, M. &amp; Papert, S. (1969). <em>Perceptrons</em>. MIT Press.</li>
+    <li>Bellman, R. (1957). <em>Dynamic Programming</em>. Princeton University Press.</li>
+  </ol>
+  <h3>Original papers</h3>
+  <ol class="refs" start="8">
+    <li>Dijkstra, E. W. (1959). A note on two problems in connexion with graphs. <em>Numerische Mathematik</em>, 1, 269–271.</li>
+    <li>Hart, P. E., Nilsson, N. J. &amp; Raphael, B. (1968). A formal basis for the heuristic determination of minimum cost paths. <em>IEEE Transactions on Systems Science and Cybernetics</em>, 4(2), 100–107.</li>
+    <li>Kirkpatrick, S., Gelatt, C. D. &amp; Vecchi, M. P. (1983). Optimization by simulated annealing. <em>Science</em>, 220(4598), 671–680.</li>
+    <li>Knuth, D. E. &amp; Moore, R. W. (1975). An analysis of alpha-beta pruning. <em>Artificial Intelligence</em>, 6(4), 293–326.</li>
+    <li>Rabiner, L. R. (1989). A tutorial on hidden Markov models and selected applications in speech recognition. <em>Proceedings of the IEEE</em>, 77(2), 257–286.</li>
+    <li>Watkins, C. J. C. H. &amp; Dayan, P. (1992). Q-learning. <em>Machine Learning</em>, 8, 279–292.</li>
+    <li>Rosenblatt, F. (1958). The perceptron: a probabilistic model for information storage and organization in the brain. <em>Psychological Review</em>, 65(6), 386–408.</li>
+    <li>Rumelhart, D. E., Hinton, G. E. &amp; Williams, R. J. (1986). Learning representations by back-propagating errors. <em>Nature</em>, 323, 533–536.</li>
+    <li>Mnih, V. et al. (2015). Human-level control through deep reinforcement learning. <em>Nature</em>, 518, 529–533.</li>
+  </ol>
+  <h3>Kazakhstan AI law (Chapter 10)</h3>
+  <ol class="refs" start="17">
+    <li>Law of the Republic of Kazakhstan of 17 November 2025 No. 230-VIII ZRK “On Artificial Intelligence”. Legal information system <em>Adilet</em>, Ministry of Justice of the Republic of Kazakhstan (unofficial English translation). <a href="https://adilet.zan.kz/eng/docs/Z2500000230" target="_blank" rel="noopener">adilet.zan.kz/eng/docs/Z2500000230</a></li>
+    <li>EY Kazakhstan (December 2025). <em>Law on Artificial Intelligence in Kazakhstan</em> (tax alert). <a href="https://www.ey.com/en_kz/technical/tax-alerts/2025/12/law-on-artificial-intelligence-kazakhstan" target="_blank" rel="noopener">ey.com/en_kz</a></li>
+  </ol>
+  <p class="small">The AI Fundamentals lecture slides were the main basis for the content; the sources above were used to check terminology, formulas and historical facts.</p>
 </section>
 
 </div>
