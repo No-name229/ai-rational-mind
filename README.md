@@ -2,7 +2,7 @@
 
 An interactive single-page educational book on Artificial Intelligence, with an illustrated comic companion, *The Chronicles of Q-Bot*.
 
-**Author:** Raid Zhetpisov
+**Author:** Raid Zhetpis
 **Course:** AI Fundamentals (Introduction to Intelligence Applications), Qairu University
 **Assignment:** EndTerm creative project (individual)
 
