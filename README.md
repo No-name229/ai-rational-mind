@@ -3,8 +3,8 @@
 An interactive single-page educational book on Artificial Intelligence, with an illustrated comic companion, *The Chronicles of Q-Bot*.
 
 **Author:** Raid Zhetpisov
-**Course:** AI Fundamentals (Introduction to Intelligence Applications), Xiamen University Malaysia
-**Assignment:** EndTerm creative project
+**Course:** AI Fundamentals (Introduction to Intelligence Applications), Qairu University
+**Assignment:** EndTerm creative project (individual)
 
 ---
 
@@ -56,6 +56,10 @@ All CSS and JavaScript are embedded in `index.html`. The only external files are
 | 9 | Neural Networks | perceptron, XOR, ReLU, backpropagation, F1 score |
 | 10 | Kazakhstan AI Legal Framework | Law No. 230-VIII ZRK, the seven principles, risk and autonomy classes, labelling, AI audit |
 
+### Sources & AI Use (`#refs`)
+
+A closing page with the generative-AI disclosure (Claude for text, code and the comic script; Google Flow with Nano Banana Pro for the comic illustrations), a note on how the content was verified, and 18 references: textbooks, original papers and the official text of the Kazakhstan AI law.
+
 ### Comic episodes (`#comic-1` … `#comic-10`)
 
 | Ep | Title | Concept |
@@ -92,7 +96,7 @@ Each episode also ends with pager buttons: back to the previous episode, **All e
 
 ### Routing
 
-The book is a hash-routed single page: `#home`, `#ch1` … `#ch10`, `#comic`, `#comic-1` … `#comic-10`. Every view has a stable, shareable URL.
+The book is a hash-routed single page: `#home`, `#ch1` … `#ch10`, `#comic`, `#comic-1` … `#comic-10`, `#refs`. Every view has a stable, shareable URL.
 
 ## 5. Running locally
 
